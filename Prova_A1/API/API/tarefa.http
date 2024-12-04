@@ -1,0 +1,21 @@
+### Listar todas as tarefas
+GET http://localhost:5275/api/tarefas/listar
+
+### Cadastrar uma nova tarefa
+POST http://localhost:5275/api/tarefas/cadastrar
+Content-Type: application/json
+
+{
+    "titulo": "fazer a prova",
+    "descricao": "Estudar Node.js para desenvolver aplicações web",
+    "categoriaId": "606dcce1-8aaf-4d17-acc3-51629daf0258"
+}
+
+###Alterar a tarefa
+PATCH http://localhost:5275/api/tarefa/alterar/3fe607f1-d792-4031-8a75-e4c16c442f47
+
+###Tarefas nao concluidas
+GET http://localhost:5275/api/tarefa/naoconcluidas
+
+###Tarefas concluidas
+GET http://localhost:5275/api/tarefas/concluidas
